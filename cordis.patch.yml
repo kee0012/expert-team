@@ -1,0 +1,4 @@
+- insert:
+    - id: expert-team
+      name: expert-team
+      config: {}

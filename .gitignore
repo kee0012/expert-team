@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.tmp/
+__pycache__/
+*.pyc
+# build.mjs 的中转目录（原子替换 lib/ 用）
+lib.tmp/
+lib.prev/
+# 打包/发布产物
+*.tgz
+*.tar.gz
+# 编辑器
+.idea/
+.vscode/
