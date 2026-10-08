@@ -67,7 +67,7 @@ const LIMITS = {
 
 /*
  * 成员详情页（客户端）按这四个标记词切小节 —— 缺哪个，那个小节就并进上一段，
- * 整段退化成一大坨。所以这里报警告（不阻塞导入），规范见 docs/expert-pack-import.md §3。
+ * 整段退化成一大坨。所以这里报警告（不阻塞导入）；成员的 persona 建议按这四段来写。
  */
 const PERSONA_MARKERS = [
   { label: '你的职责', pattern: /你的职责/ },
@@ -254,7 +254,7 @@ for (const draft of drafts) {
       .map(marker => marker.label)
     if (missingMarkers.length > 0) {
       warn(`${teamId}/${memberId}: persona 缺小节标记「${missingMarkers.join('、')}」`
-        + '—— 成员详情会退化成整段文本（见 docs/expert-pack-import.md §3）')
+        + '—— 成员详情会退化成整段文本（建议按「你的职责 / 你的工作方式是 / 你的交付物 / 你的纪律是」四段写 persona）')
     }
 
     const alias = lengthIssues(teamId, memberId, 'alias', item.alias, LIMITS.alias, false)
