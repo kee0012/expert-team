@@ -1,6 +1,6 @@
 {
   "name": "expert-team",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "private": false,
   "description": "DSH 专家团插件：把一支多角色专家团队装进当前会话 —— 团队画廊、成员名册、一键召唤，每位专家在独立子会话中并行工作，主会话汇总产出。",
   "type": "module",
